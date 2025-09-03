@@ -15,7 +15,7 @@ app.use(express.json())
 app.use(morgan("dev"))
 app.use(
   cors({
-    origin: process.env.CLIENT_ORIGIN || "http://localhost:5173",
+    origin: process.env.CLIENT_ORIGIN 
     credentials: true,
   }),
 )
